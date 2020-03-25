@@ -1,4 +1,4 @@
-# admin
+# modules: admin
 modules: admin
 
 Module for m-framework. Beautiful admin dashborad for manage all of modules and their content.
