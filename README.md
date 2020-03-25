@@ -1,5 +1,4 @@
 # modules: admin
-modules: admin
 
 Module for m-framework. Beautiful admin dashborad for manage all of modules and their content.
 It has adaptive design but strongly recommended to use admin dashboard on large screens.
