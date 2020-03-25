@@ -1,0 +1,37 @@
+body {
+    background: #fff;
+    background-image: url('/m-framework/modules/admin/client/img/servers_bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+body::before {
+    content: "";
+    display: none;
+}
+.dashboard-login {
+    display: block;
+    width: 260px;
+    margin: -126px auto 0 -132px;
+    text-align: left;
+    background-color: rgba(0, 144, 225, 0.5);
+    padding: 5px 20px 20px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    top: 50%;
+    position: fixed;
+    left: 50%;
+}
+.dashboard-login h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+}
+.dashboard-login input {
+    border: solid 1px #2f9ccf;
+}
+.footer {
+    display: none;
+}

@@ -1,0 +1,74 @@
+<h2> </h2>
+<div class="row dashboard-graphs">
+    <div class="w50 md-w100">
+        <div class="dashboard-graph">
+            <canvas
+                    width="540"
+                    height="200"
+                    data-m-action="canvas_graph"
+                    data-m-graph-type="1"
+                    data-m-smooth="0.5"
+                    data-m-json-coords="~language_prefix~/admin/users/users-json"></canvas>
+        </div>
+    </div><!--
+ --><div class="w50 md-w100">
+        <div class="dashboard-graph">
+            <canvas
+                    width="540"
+                    height="200"
+                    data-m-action="canvas_graph"
+                    data-m-graph-type="2"
+                    data-m-smooth="0.5"
+                    data-m-json-coords="~language_prefix~/admin/users/visitors-json"></canvas>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="w16 md-w33">
+        <div class="block dashboard-info-block">
+            <a href="~language_prefix~/admin/users/"><h3><i class="fa fa-users"></i> *Users*</h3></a>
+            <p>*Total*: ~all_users_amount~</p>
+            <p>*New today*: ~today_users_amount~</p>
+            <p>*Soc.networks profiles*: ~social_networks_profiles~</p>
+        </div>
+    </div><!--
+ --><div class="w16 md-w33">
+        <div class="block dashboard-info-block">
+            <a href="~language_prefix~/admin/users/visitors"><h3><i class="fa fa-user-o"></i> *Visitors*</h3></a>
+            <p>*Total*: ~visitors_amount~</p>
+            <p>*Per today*: ~today_visitors_amount~</p>
+            <p>*Products visits*: ~products_visitors_amount~</p> <!--TODO: link to view visited or more popular products-->
+        </div>
+    </div><!--
+ --><div class="w16 md-w33">
+        <div class="block dashboard-info-block">
+            <a href="~language_prefix~/admin/articles"><h3><i class="fa fa-file-text-o"></i> *Articles*</h3></a>
+            <p>*Total*: ~articles_amount~</p>
+            <p>*News*: ~news_amount~</p>
+        </div>
+    </div><!--
+ --><div class="w16 md-w33">
+        <div class="block dashboard-info-block">
+            <a href="~language_prefix~/admin/comments"><h3><i class="fa fa-comments-o"></i> *Comments*</h3></a>
+            <p>*Total*: ~comments_amount~</p>
+            <p>*For items*: ~items_comments_amount~</p>
+        </div>
+    </div><!--
+ --><div class="w16 md-w33">
+        <div class="block dashboard-info-block">
+            <a href="~language_prefix~/admin/shop"><h3><i class="fa fa-shopping-bag"></i> *Products*</h3></a>
+            <p>*Total*: ~products_amount~</p>
+            <p>*In baskets*: ~baskets_products_amount~</p>
+        </div>
+    </div><!--
+ --><div class="w16 md-w33">
+        <div class="block dashboard-info-block">
+            <a href="~language_prefix~/admin/shop/sales"><h3><i class="fa fa-shopping-cart"></i> *Sales*</h3></a>
+            <p>*Total*: ~sales_sum~</p>
+            <p>*Per today*: ~today_sales_sum~</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    ~new_users~~last_comments~~last_orders~
+</div>

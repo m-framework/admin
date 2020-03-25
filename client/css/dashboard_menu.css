@@ -1,0 +1,170 @@
+.dashboard-menu {
+    margin: 0;
+    width: 200px;
+    min-width: 200px;
+    background-color: #484848;
+    display: table-cell;
+    font-size: 13px;
+    vertical-align: top;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.dashboard-menu.min {
+    width: 50px;
+    min-width: 50px;
+}
+.dashboard-menu i.fa {
+    display: inline-block;
+    width: 24px;
+    text-align: left;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.dashboard-menu .sub-menu i.fa {
+    font-size: 13px;
+}
+.dashboard-menu > a {
+    display: block;
+    padding: 11px 10px;
+    border-top: 1px solid #585858;
+    color: #ddd;
+    position: relative;
+    height: 42px;
+}
+.dashboard-menu .dashboard-menu-header,
+.dashboard-menu .dashboard-menu-header:hover
+{
+    background-color: #3096d1;
+    border: none 0;
+    color: #fff;
+    padding: 10px;
+    vertical-align: middle;
+    margin: 0;
+    height: 50px;
+}
+.dashboard-menu .dashboard-menu-header img
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+.dashboard-menu > a:hover,
+.dashboard-menu > a.active,
+.dashboard-menu > a.selected
+{
+    background-color: #373737;
+    text-decoration: none;
+}
+.dashboard-menu > a.selected {
+    /*color: #fff;*/
+    color: #fff8ae;
+}
+.dashboard-menu > a + .sub-menu {
+    display: block;
+    padding: 0;
+    /*height: 0;*/
+    overflow: hidden;
+    font-size: 0.9em;
+}
+.dashboard-menu > a.collapse:before {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    color: #ddd;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.dashboard-menu > a.collapse.selected:before,
+.dashboard-menu > a.collapse.active:before
+{
+    transform: rotate(180deg);
+}
+.dashboard-menu > a.active + .sub-menu,
+.dashboard-menu > a.selected + .sub-menu
+{
+    /*height: auto;*/
+    background-color: #3b3b3b;
+}
+.dashboard-menu > a + .sub-menu > a {
+    display: block;
+    padding: 0 10px 0 24px;
+    color: #C4C4C4;
+    text-decoration: none;
+    vertical-align: middle;
+    overflow: hidden;
+    height: 0;
+    line-height: 32px;
+}
+.dashboard-menu > a.active + .sub-menu > a,
+.dashboard-menu > a.selected + .sub-menu > a
+{
+    height: 32px;
+    border-top: 1px solid #585858;
+    background-color: #323232;
+}
+.dashboard-menu > a + .sub-menu > a:first-child {
+    /*border-top: none 0;*/
+}
+.dashboard-menu > a + .sub-menu > a:hover,
+.dashboard-menu > a + .sub-menu > a.active,
+.dashboard-menu > a + .sub-menu > a.selected
+{
+    background-color: #373737;
+    text-decoration: none;
+    /*padding: 10px 10px 10px 35px;*/
+    color: #fff8ae;
+}
+.menu select, .dashboard-menu select {
+    display: none;
+}
+.dashboard-menu.min a:not(.dashboard-menu-header) {
+    font-size: 0;
+}
+.dashboard-menu.min > a:not(.dashboard-menu-header) {
+    padding-left: 17px;
+}
+.dashboard-menu.min a.dashboard-menu-header span {
+    font-size: 0;
+}
+.dashboard-menu.min .dashboard-menu-header img {
+    margin: 0;
+}
+.dashboard-menu.min > a + .sub-menu > a {
+    padding: 0 0 0 24px;
+}
+.dashboard-menu.min i.fa {
+}
+.dashboard-menu > a:nth-child(2) {
+    border-top: none 0;
+}
+
+@media (max-width: 480px) {
+    .dashboard-menu a {
+        /*display: none;*/
+    }
+    .dashboard-menu > a:not(.dashboard-menu-header) {
+        padding-left: 17px;
+    }
+    .dashboard-menu a:not(.dashboard-menu-header) {
+        font-size: 0;
+    }
+    .dashboard-menu a.dashboard-menu-header span {
+        font-size: 0;
+    }
+    .dashboard-menu {
+        width: 50px;
+        min-width: 50px;
+    }
+    .dashboard-menu .dashboard-menu-header img {
+        margin: 0;
+    }
+    .dashboard-menu > a + .sub-menu > a {
+        padding: 0 0 0 24px;
+    }
+}

@@ -1,0 +1,81 @@
+.dashboard-info-block {
+    background-color: #f9f9f9;
+    border: solid 1px #ddd;
+    color: #666;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    font-size: 12px;
+    min-height: 160px;
+    padding: 10px;
+}
+.dashboard-info-block p:last-child {
+    margin-bottom: 0;
+}
+.dashboard-info-block:hover {
+    background-color: #3096d1;
+    border: solid 1px #257eb1;
+    color: #fff;
+}
+.dashboard-graphs .dashboard-graph {
+    width: 100%;
+    overflow-x: auto;
+}
+.dashboard-info-block a {
+    color: inherit;
+}
+.dashboard-info-block .fa {
+    font-size: 16px;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid 1px #ddd;
+    height: 30px;
+}
+.dashboard-info-block:hover .fa {
+    color: #3096d1;
+    border: solid 1px #257eb1;
+}
+.last-comment,
+.new-customer
+{
+    border-bottom: solid 1px #f9f9f9;
+    margin-bottom: 5px;
+    display: block;
+    min-height: 22px;
+}
+.last-comment:hover,
+.new-customer:hover
+{
+    background-color: #fcfcfc;
+}
+.last-comment .date,
+.new-customer .date
+{
+    float: left;
+    font-size: 11px;
+    color: #999;
+}
+.last-comment .path a,
+.new-customer .path a
+{
+    text-decoration: underline;
+}
+.last-comment .path,
+.new-customer .path
+{
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+.last-comment > div,
+.new-customer > div
+{
+    float: none;
+    clear: both;
+    padding: 5px 0;
+}
