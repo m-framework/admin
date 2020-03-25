@@ -10,11 +10,11 @@ Installation
 - Place obtained repository to /m-framework/modules/ directory.
 - The minimum required PHP version is 5.4.
 
-Requirements
-------------
+Required modules
+----------------
 
-- module:db (store settings and modules data in DB, required section "db" in site config file)
-- module:users (authorisation and users roles)
-- module:sites (manage site options and current config settings)
-- module:modules (manage installed modules)
-- module:pages (manage site pages and pages modules)
+- modules:db (store settings and modules data in DB, required section "db" in site config file)
+- modules:users (authorisation and users roles)
+- modules:sites (manage site options and current config settings)
+- modules:modules (manage installed modules)
+- modules:pages (manage site pages and pages modules)
